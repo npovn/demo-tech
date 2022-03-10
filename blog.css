@@ -1,0 +1,344 @@
+ol > li{
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "8BITWONDERNominal";
+    font-weight: normal;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+#first-text{
+    overflow-y: hidden;
+}
+
+nav a img{
+    margin-top: -5px;
+    width: 180px;
+    height: 90px;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("Pictures/testingpic.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.nav-links ul li::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links ul li:hover::after{
+    width:100%
+}
+
+.header-text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translate(-50,-50);
+    text-align: center;
+}
+
+.header-text-box h1{
+    font-size: 40px;
+    word-spacing: 1px;
+    color: gold;
+    font-family: "8BITWONDERNominal";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Home-text p{
+    overflow-y: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.header-text-box p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 35px;
+    font-weight: normal;
+    font-style: normal;
+    word-spacing: 3px;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer{
+    min-height: 100px;
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 5px;
+}
+
+footer p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.why{
+    display: inline-flex;
+}
+
+h5{
+    margin-left: 4px;
+    margin-right: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.Home-text:hover {
+    height: 860px;
+    overflow-y: hidden;
+}    
+
+.Home-text{
+    overflow-y: hidden;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    pointer-events: none;
+    transition: all 1.5s;
+}
+
+.Para{
+    height: 480px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 15px 15px 7px rgba(4, 80, 131, 0.767);
+    pointer-events: auto;
+    transition: all 1.5s;
+}
+
+
+.Para:hover{
+    height: 820px;
+    overflow-y: hidden;
+}
+
+.Para p{
+    padding-bottom: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow-y: hidden;
+}
+
+.seabed{
+    display: flex;
+    justify-content: space-between;
+}
+
+.seabed img{
+    z-index: -2;
+}
+
+.bubble {
+    pointer-events: none;
+    animation: flyUpAndPop 4s linear infinite;
+}
+
+
+@keyframes flyUpAndPop
+{
+    0%
+    {
+        transform: translateY(200%);
+    }
+    99%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(-1900%);
+    }
+}
+
+#BubbleWrapper {
+    position: relative;
+}
+
+#BubbleWrapper img {
+    position: absolute;
+    z-index: -1;
+}
+
+
+.Para h1{
+    font-family: "8BITWONDERNominal";
+    margin-top: 40px;
+    color:#fff;
+    font-size: 30px;
+    overflow: hidden;
+    text-shadow: 2px 2px 5px rgb(255, 0, 119);
+    animation: 
+    appear 4s steps(40, end), step-end infinite;
+}
+
+.Para p{
+    overflow-y: hidden;
+    font-size: 17px;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#fff;
+    font-weight: 900;
+    animation: 
+    appear 4s steps(40, end), step-end infinite;
+}
+
+@keyframes appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.Para img{
+    overflow-y: hidden;
+    width: 350px;
+    height: 350px;
+}
+
+.nofooter{
+    overflow-y: hidden;
+    background-image: linear-gradient(#71C0D8, #12448E);
+}
+
+
+@media(max-width: 800px){
+    .header-text-box{
+        font-size: 100px;
+        top: 20%;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position:absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .
+    {
+        height: inherit;
+        overflow-y: hidden;
+    }
+
+    .Para{
+        height: inherit;
+        overflow-y: hidden;
+    }
+
+    .Home-text:hover{
+        height: inherit;
+        overflow-y: hidden;
+    }
+
+    .Para:hover{
+        overflow-y: hidden;
+        height: inherit;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding-left:30px;
+    }
+
+    .row{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer{
+        overflow-y: hidden;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    footer span{
+        font-size: 16px;
+    }
+}
